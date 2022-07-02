@@ -1,0 +1,18 @@
+.t-btn{
+    background-color: #2ca01c;
+    height: 35px;
+    text-align: center;
+    border: none;
+    border-color: #2ca01c;
+    color: #fff;
+    padding: 0px 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    white-space: nowrap; 
+}
+.t-btn:hover{
+    background-color: #2ba01caa;
+}
+.t-btn:active{
+    background-color: #2ba01caa;
+}

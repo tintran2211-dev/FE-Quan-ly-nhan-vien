@@ -1,0 +1,189 @@
+.popup_form{
+    height: 613px;
+    width: 900px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+}
+.header_popup{
+    display: flex;
+    justify-content: space-between;
+    height: 73px;
+}
+.header_popup_title, .header_popup_close{
+    height: 100%;
+    display: flex;
+}
+.header_popup_title{
+    align-items: center;
+    padding: 20px 12px 20px 32px;
+}
+.header_popup_close{
+    padding: 12px;
+}
+.header_popup_title .div_checkbox{
+    padding: 0 19.5px;
+}
+.help_popup{
+    height: 24px;
+    width: 24px;
+    background: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -89px -144px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.close_popup{
+    height: 24px;
+    width: 24px;
+    background-color: aqua;
+    background: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -144px -144px;
+    cursor: pointer;
+}
+
+
+.content_popup{
+    padding: 0 32px 20px 32px;
+}
+
+.row_info_input{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.col_info_input{
+    display: flex;
+    flex-basis: 100%;
+}
+.row_info_input .col_info_input:first-child{
+    padding-right: 15px;
+}
+
+.info_input_box{
+    display: flex;
+    flex-direction: column;
+    /* flex-basis: 100%; */
+    padding: 5px;
+}
+
+.info_input_label{
+    font-weight: 700;
+}
+.required::after{
+    content: " *";
+    color: red;
+}
+
+.input_info{
+    border: 1px solid #DBDEFF;
+    border-radius: 5px;
+    height: 34px;
+    color: black;
+    outline: none;
+    width: 100%;
+    padding: 0 24px;
+}
+
+.select_info{
+    border: 1px solid #DBDEFF;
+    border-radius: 5px;
+    height: 34px;
+    color: #bbbbbb;
+    outline: none;
+    width: 98%;
+    padding: 0 24px;
+    color: black;
+}
+.input_info:focus{
+    border-color: #01b075;
+}
+
+.input_info_required:hover{
+    border-color: brown;
+}
+
+.info_input_box_radio{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.option_radio{
+    margin: 0 8px;
+}
+.col_full{
+    flex-basis: 100%;
+}
+.col_2_of_3{
+    flex-grow: 2;
+}
+.col_1_of_4{
+    flex-basis: 25%;
+}
+.flex_start{
+    justify-content: flex-start;
+}
+
+/* .footer_popup{
+
+} */
+.divide{
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    margin: 32px 0 20px;
+}
+.footer_popup_btn{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+}
+
+/* Style Popup Validate Message */
+
+.popup_message{
+    height: 183px;
+    width: 444px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: none;
+}
+.popup_message .message{
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    border-radius: 4px;
+}
+.popup_message .icon_message{
+    height: 48px;
+    width: 48px;
+    background: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -24px -954px;
+}
+.popup_message icon_message_toast{
+    height: 48px;
+    width: 48px;
+    background: url(../../assets/img/Sprites.64af8f61.svg) no-repeat;
+    background-position: -990px -462px;
+}
+.message .message_text{
+    padding-left: 16px;
+}
+.message_line{
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    margin: 0 0 20px 0;
+}
+.popup_message_footer{
+    text-align: center;    
+}

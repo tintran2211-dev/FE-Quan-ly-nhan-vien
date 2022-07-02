@@ -1,0 +1,70 @@
+@import url(./layout/content.css);
+@import url(./layout/header.css);
+@import url(./layout/navbar.css);
+@import url(./base/font.css);
+@import url(./base/icon.css);
+@import url(./base/button.css);
+@import url(./base/checkbox.css);
+@import url(./base/form.css);
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: inherit;
+    text-decoration-line: none;
+    box-sizing: border-box;
+    outline: none;
+}
+:root{
+    --body-color:#f4f5f8;
+    --navbar-color:#393d3a;
+    --logo-navbar-color:#393d3a;
+    --header-color:#fff;
+    --content-color:#e3e8ef;
+    --text-color:rgb(15, 14, 14);
+    --toogle-color:#2ca01c;
+    --switch-color:#fff;
+    --content-table-color:#f4f5f8;
+    --scroolbar-color: #92959b;
+}
+#app{
+    min-width: 1024px;
+    min-height: 768px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--scroolbar-color);
+}
+body{
+    overflow: hidden;
+    font-family: MISA Fonts Regular;
+    font-size: 13px;
+    background:var(--body-color);
+    transition: all 0.4s ease;
+}
+body.dark{
+    --body-color:#393d3a;
+    --navbar-color:#393d3a;
+    --logo-navbar-color:#393d3a;
+    --header-color:#767e82;
+    --text-color:#fff;
+    --switch-color:#393d3a;
+    --toogle-color:#1e8f42;
+    --content-color:#393d3a;
+    --content-table-color:#767e82;
+    --scroolbar-color: #fff;
+}
+
+[notValid]{
+    border: 1px solid #FF4747;
+}
+.layout-main{
+    display: flex;
+}
+.main-content{
+    flex-grow: 1;
+}
+

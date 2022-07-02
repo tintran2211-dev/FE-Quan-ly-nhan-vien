@@ -1,0 +1,170 @@
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--content-color);
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: calc(100vh - 48px);
+    overflow: auto;
+    color: var(--text-color);
+}
+.ms-main-content{
+    position: relative;
+    padding: 20px;
+    background: var(--content-table-color);
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.content-tittle{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.header-m-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    
+}
+.content-input{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    align-items: flex-end;
+}
+.ms-input{
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 2px;
+    color: inherit;
+    height: 32px;
+    border: 1px solid #babec5;
+    width: 100%;
+    padding-right: 2.75rem;
+    padding-left: 10px;
+}
+.ms-input:focus{
+    border-color: #2ca01c ;
+}
+.ms-input .ms-con-input{
+    padding-left: 10px;
+    width: 240px;
+}
+.icon-search-opt{
+    position: absolute;
+    color: rgba(0,0,0,.4);
+    top: 7px;
+    padding-right: 20px;
+}
+.icon-refresh-opt{
+    top:5px;
+}
+.table-main-content{
+    padding-top: 20px;
+}
+.content-table{
+    height: calc(100vh - 42px);
+    overflow-y: auto;
+}
+.content-table .table{
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+.table tr{
+    height: 32px;
+    border-bottom: 1px solid #bbb;
+}
+.table tr th{
+    position: sticky;
+    top: 0;
+    background:var( --content-color);
+    z-index: 1;
+    white-space: nowrap;
+}
+.table th:first-child{
+    padding-left: 16px;
+}
+.table td:first-child{
+    padding-left: 16px;
+}
+.table th:not(:last-child), table td:not(:last-child){
+    border-right: 1px solid var(--text-color);
+}
+.table tr th{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.tbody tr:focus {
+    background-color: #e5f3ff;
+}
+tbody tr:hover {
+    background: var(--content-color);
+}
+.td_check{
+    width: 40px;
+}
+.td_stt{
+    width: 40px;
+}
+.td_id{
+    width: 120px;
+}
+.td_name{
+    width: 220px;
+}
+.td_gender{
+    width: 50px;
+}
+.td_date{
+    width: 100px;
+}
+.td_card{
+    width: 120px;
+}
+.td_position{
+    width: 200px;
+}
+.td_company{
+    width: 200px;
+}
+.td_accountnumber{
+    width: 140px;
+}
+.td_bankname{
+    width: 180px;
+}
+.td_bankbranch{
+    width: 150px;
+}
+.td_feature{
+    width: 100px;
+}
+.wrapper-status {
+    display: none;
+}
+.successfully-action {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    width: 200px;
+    height: 50px;
+    background-color: #ebebeb;
+    z-index: 999;
+    border-radius: 4px;
+}
+
+.successfully-action i {
+    color:#36de20;
+    margin-right: 0.5rem;
+}

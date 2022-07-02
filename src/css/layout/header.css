@@ -1,0 +1,120 @@
+.header{
+    padding: 0;
+    position: relative;
+    height: 48px;
+    display: flex;
+    background: var(--header-color);
+    font-weight: bold;
+    border-bottom: 1px solid #e5e5e5;
+    color: var(--text-color);
+}
+.name-cpn-box{
+    display: flex;
+    width: 45%;
+    height: 48px;
+    line-height: 48px;
+    align-items: center;
+}
+.name-cpn{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    white-space: nowrap; 
+}
+.icon-cpn-option{
+    align-self: center;
+    display: block;
+    transform: rotate(90deg);
+}
+.user-box{
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    height: 48px;
+    justify-content: flex-end;
+    right: 20px;
+}
+.icon-user-option{
+    align-self: center;
+    transform: rotate(90deg);
+}
+.name-user{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.header-icon{
+    margin: 0 10px;
+}
+.user-img{
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    background-size: contain;
+    background-image: url(../../assets/img/281521111_614947579503948_561319069309808319_n.png);
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.m-mode{
+    display: flex;
+    position: relative;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+.toggle-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+}
+.toggle-switch .switch{
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background:var(--toogle-color);
+}
+.moon-sun{
+    height: 50px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sun-icon{
+    opacity: 0;
+}
+body.dark .sun-icon{
+    opacity: 1;
+}
+body.dark .moon-icon{
+    opacity: 0;
+}
+.pos{
+    position: absolute;
+}
+.switch::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top:50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: var(--switch-color);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+body.dark .switch::before{
+    left: 25px;
+}
